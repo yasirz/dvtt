@@ -1,0 +1,108 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "smtp_information",
+    "email_to",
+    "email_cc",
+    "input_file",
+    "validator_path"
+  ],
+  "properties": {
+    "smtp_information": {
+      "$id": "#/properties/smtp_information",
+      "type": "object",
+      "title": "The Smtp_information Schema",
+      "required": [
+        "smtp_server",
+        "smtp_port",
+        "email_address"
+      ],
+      "properties": {
+        "smtp_server": {
+          "$id": "#/properties/smtp_information/properties/smtp_server",
+          "type": "string",
+          "title": "The Smtp_server Schema",
+          "default": "",
+          "examples": [
+            "smtp.example.com"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "smtp_port": {
+          "$id": "#/properties/smtp_information/properties/smtp_port",
+          "type": "integer",
+          "title": "The Smtp_port Schema",
+          "default": 0,
+          "examples": [
+            465
+          ]
+        },
+        "email_address": {
+          "$id": "#/properties/smtp_information/properties/email_address",
+          "type": "string",
+          "title": "The Email_address Schema",
+          "default": "",
+          "examples": [
+            "test@example.com"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "email_to": {
+      "$id": "#/properties/email_to",
+      "type": "array",
+      "title": "The Email To Schema",
+      "default": null,
+      "items": {
+        "$id": "#/properties/email_to/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "test@example.com"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "email_cc": {
+      "$id": "#/properties/email_cc",
+      "type": "array",
+      "title": "The Email CC Schema",
+      "default": null,
+      "items": {
+        "$id": "#/properties/email_cc/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "test@example.com"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "input_file": {
+      "$id": "#/properties/input_file",
+      "type": "string",
+      "title": "The Input_file Schema",
+      "default": "",
+      "examples": [
+        "/Path/To-Your/file.csv"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "validator_path": {
+      "$id": "#/properties/validator_path",
+      "type": "string",
+      "title": "The CSV Validator URL",
+      "default": "",
+      "examples": [
+        "/Path/to/validate"
+      ]
+    }
+  }
+}

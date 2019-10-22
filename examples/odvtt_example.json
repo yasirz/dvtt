@@ -1,0 +1,15 @@
+{
+  "smtp_information": {
+    "smtp_server": "smtp.example.com",
+    "smtp_port": 465,
+    "email_address": "test@example.com"
+  },
+  "email_to": [
+    "example@example.com"
+  ],
+  "email_cc":[
+  	"example_cc@example.com"
+  ],
+  "input_file": "C:\\files\\example.csv",
+  "validator_pathh" : "C:\\validator\\validator.bat or validate"
+}
