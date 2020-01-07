@@ -49,7 +49,7 @@ $ pip install -r requirements.txt
 
 **Note:** _Please see the [odvtt_example.json](examples/odvtt_example.json) configuration file for inputs which are required._
 
-* Run the odvtt tool
+* Run the dvtt tool
 ```bash
 python odvtt.py /your/configuration/file.json
 ```
