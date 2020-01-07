@@ -1,5 +1,5 @@
 # Data Validation & Transfer Tool (DVTT)
-Operator Data Validation & Transfer Tool (ODVTT) is partially related to DIRBS System. It is used to validate operator 
+Data Validation & Transfer Tool (ODVTT) is partially related to DIRBS System. It is used to validate operator 
 data dump which is imported into DIRBS Core.
 
 ### Directory structure
